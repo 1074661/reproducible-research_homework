@@ -1,8 +1,8 @@
 # Reproducible research: version control and R
 
-Question 4)
+# Question 4)
 
-Question 5)
+# Question 5)
 
 ## Instructions
 
