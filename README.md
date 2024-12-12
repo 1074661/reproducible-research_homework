@@ -64,6 +64,8 @@ Therefore, my scaling factor is the same as that found by Cui et al. (2014) when
 iv) The code to reproduce the figure is shown below.
 
 ```{r}
+install.packages("ggplot2")
+library(ggplot2)
 ggplot(data = dsDNAviruses_data, aes(x=log_bases, y=log_volume)) + 
   geom_point() +
   xlab("log [Genome length (kb)]") + 
