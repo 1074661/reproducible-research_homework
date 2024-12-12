@@ -14,6 +14,8 @@ c) I edited the script to make a reproducible simulation of Brownian motion and 
 
 d) ADD IMAGE to the README.md of the fork
 
+#### Commit history
+
 # Question 5)
 
 ## Instructions
