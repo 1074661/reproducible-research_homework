@@ -2,7 +2,7 @@
 
 ## Questions 1, 2 and 3
 
-Questions 1, 2 and 3 were answered in the README.md file of the logistic_growth repo forked during the practical. A link to these answers is given below. 
+Questions 1, 2 and 3 were answered in the README.md file of the logistic_growth repo forked during the practical. The link to these answers is given here: . 
 
 ## Question 4)
 
