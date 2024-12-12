@@ -14,34 +14,69 @@ iii) I edited the script to make a reproducible simulation of Brownian motion an
 
 iv) Edits to code performed for reproducibility.
 
-ADD IMAGE to the README.md of the fork
+ADD IMAGE OF LATEST COMMIT HISTORY to the README.md of the fork
 
 #### Commit history
 
 # Question 5)
 
-i) 
+i) The code below informs that there are 33 rows and 13 columns in the table. 
 
 ```{r}
-dsDNA_viruses_data <- read.csv("question-5-data/Cui_etal2014.csv")
-ncol(virion_data)
-nrow(virion_data)
+dsDNAviruses_data <- read.csv("Cui_etal2014.csv")
+ncol(dsDNAviruses_data)
+nrow(dsDNAviruses_data)
 ```
 
+ii) A log transformation can be applied to the data such that a linear model (in the form y = a + bx) can be fitted to the data: 
 
+$$V = αL^β^ -> ln(V) = ln(α) + βln(L)$$
 
+```{r}
+# Cleaning data and applying transformation to data
+dsDNAviruses_data$log_volume <- log(dsDNAviruses_data$Virion.volume..nm.nm.nm.)
+dsDNAviruses_data$bases <- (dsDNAviruses_data$Genome.length..kb.)
+dsDNAviruses_data$log_bases <- log(dsDNAviruses_data$bases)
 
+# Applying a linear model (in the form y = a + bx) to data
+linearmodel <- lm(log_volume ~ log_bases, data = dsDNAviruses_data)
+summary(linearmodel)
+```
 
+iii) The linear model is $$ln(V) = ln(α) + βln(L)$$
 
+ADD IMAGE OF OUTPUT OF SUMMARY(LINEARMODEL)
 
+#### Output of summary(linearmodel)
 
+Per the summary table, the estimate of the intercept (ln(α)) of the linear model is 7.0748. Therefore, the scaling factor (α) is 1181.81 (since e^7.0748^ is 1181.807116). Per the summary table, the P-value for the intercept is 2.28 x 10^-10^, which is highly statistically significant (<<< 0.01 significance level threshold). 
 
+Per the summary table, the estimate of the gradient (β) of the linear model is 1.5152. Therefore, the exponent (β) is 1.52. Per the summary table, the P-value for the gradient is 6.44 x 10^-10^, which is highly statistically significant (<<< 0.01 significance level threshold). 
 
+In Table 2 from Cui et al. (2014), for the allometric relationship between dsDNA virion volume and genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
 
+Therefore, my scaling factor is the same as that found by Cui et al. (2014) when rounded to the nearest whole number, and my allometric exponent is the same as that found by Cui et al. (2014).
 
+iv) The code to reproduce the figure is shown below.
 
+```{r}
+ggplot(data = dsDNAviruses_data, aes(x=log_bases, y=log_volume)) + 
+  geom_point() +
+  xlab("log [Genome length (kb)]") + 
+  ylab("log [Virion volume (nm3)]") +
+  geom_smooth(method = 'lm') +
+  theme_minimal() +
+  theme(panel.border = element_rect(color = "black", fill = NA, size = 1))
+```
+ADD IMAGE OF OUTPUT OF CODE
 
+#### Output of code
 
+v) $$V = αL^β^$$
+
+Given α (not rounded) is 1181.807116 and β is 1.5152 (not rounded), when L = 300:
+
+$$V = (1181.807116)*(300)^(1.5152) = 6,700,000 nm^3^$$ 
 
 ## Instructions
 
