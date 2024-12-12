@@ -18,7 +18,7 @@ ADD IMAGE OF LATEST COMMIT HISTORY to the README.md of the fork
 
 #### Commit history
 
-# Question 5)
+## Question 5)
 
 i) The code below informs that there are 33 rows and 13 columns in the table. 
 
