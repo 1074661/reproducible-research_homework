@@ -30,7 +30,7 @@ nrow(dsDNAviruses_data)
 
 ii) A log transformation can be applied to the data such that a linear model (in the form y = a + bx) can be fitted to the data: 
 
-$$V = αL^β^ -> ln(V) = ln(α) + βln(L)$$
+$$V = αL^β -> ln(V) = ln(α) + βln(L)$$
 
 ```{r}
 # Cleaning data and applying transformation to data
@@ -72,11 +72,11 @@ ADD IMAGE OF OUTPUT OF CODE
 
 #### Output of code
 
-v) $$V = αL^β^$$
+v) $$V = αL^β$$
 
 Given α (not rounded) is 1181.807116 and β is 1.5152 (not rounded), when L = 300:
 
-$$V = (1181.807116)*(300)^(1.5152) = 6,700,000 nm^3^$$ 
+$$V = (1181.807116)*(300)^(1.5152) = 6,700,000 nm^3$$ 
 
 ## Instructions
 
