@@ -74,7 +74,9 @@ ADD IMAGE OF OUTPUT OF CODE
 
 v) $$V = αL^β$$
 
-$$V = (1181.807116)*(300)^(1.5152) = 6,700,000 nm^3$$ 
+$$V = (1181.807116)*((300)^1.5152) = 6,700,000 nm^3 (rounded to 3 s.f.)$$ 
+
+Therefore, the estimated volume of a 300 kb dsDNA virus is 6,700,000 nm^3.
 
 ## Instructions
 
