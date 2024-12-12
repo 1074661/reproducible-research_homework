@@ -30,7 +30,7 @@ nrow(dsDNAviruses_data)
 
 ii) In order that a linear model (in the form y = a + bx) can be fitted to the data, a log transformation can be applied such that:
 
-$$V = αL^β$$ becomes $$ln(V) = ln(α) + βln(L)$$
+$$V = αL^β$$ Is transformed to $$ln(V) = ln(α) + βln(L)$$
 
 ```{r}
 # Cleaning data and applying transformation to data
