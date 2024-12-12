@@ -4,12 +4,7 @@
 library(ggplot2)
 library(gridExtra)
 
-random_walk  <- function (n_steps, seed = 100) {
-
-  set.seed(seed)
-
-# Adding this arbitrary random seed inside the random_walk function renders the simulation of Brownian motion reproducible. 
-# Plot1 and plot2 show the same random walk trajectory output because the same random seed was inputted into the function'random_walk' run over 500 steps in data1 and data2. 
+random_walk  <- function (n_steps) {
   
   df <- data.frame(x = rep(NA, n_steps), y = rep(NA, n_steps), time = 1:n_steps)
   
