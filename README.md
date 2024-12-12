@@ -49,11 +49,11 @@ ADD IMAGE OF OUTPUT OF SUMMARY(LINEARMODEL)
 
 #### Output of summary(linearmodel)
 
-Per the summary table, the estimate of the intercept (ln(α)) of the linear model is 7.0748. Therefore, the scaling factor (α) is 1181.81 (since e^7.0748^ is 1181.807116). Per the summary table, the P-value for the intercept is 2.28 x 10^-10^, which is highly statistically significant (<<< 0.01 significance level threshold). 
+Per the summary table, the estimate of the intercept (ln(α)) of the linear model is 7.0748. Therefore, the scaling factor (α) is 1181.81 (since e^7.0748 is 1181.807116). Per the summary table, the P-value for the intercept is 2.28 x 10^-10, which is highly statistically significant (<<< 0.01 significance level threshold). 
 
-Per the summary table, the estimate of the gradient (β) of the linear model is 1.5152. Therefore, the exponent (β) is 1.52. Per the summary table, the P-value for the gradient is 6.44 x 10^-10^, which is highly statistically significant (<<< 0.01 significance level threshold). 
+Per the summary table, the estimate of the gradient (β) of the linear model is 1.5152. Therefore, the exponent (β) is 1.52. Per the summary table, the P-value for the gradient is 6.44 x 10^-10, which is highly statistically significant (<<< 0.01 significance level threshold). 
 
-In Table 2 from Cui et al. (2014), for the allometric relationship between dsDNA virion volume and genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
+In Table 2 from Cui et al. (2014), for the allometric relationship between dsDNA virion volume and dsDNA virion genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
 
 Therefore, my scaling factor is the same as that found by Cui et al. (2014) when rounded to the nearest whole number, and my allometric exponent is the same as that found by Cui et al. (2014).
 
@@ -73,8 +73,6 @@ ADD IMAGE OF OUTPUT OF CODE
 #### Output of code
 
 v) $$V = αL^β$$
-
-Given α (not rounded) is 1181.807116 and β is 1.5152 (not rounded), when L = 300:
 
 $$V = (1181.807116)*(300)^(1.5152) = 6,700,000 nm^3$$ 
 
