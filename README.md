@@ -1,5 +1,9 @@
 # Reproducible research: version control and R
 
+## Questions 1, 2 and 3
+
+Questions 1, 2 and 3 were answered in the README.md file of the logistic_growth repo forked during the practical. A link to these answers is given below. 
+
 ## Question 4)
 
 i) Executing the provided code gives two side-by-side random walk plots that are the result of two independent iterations of the function 'random_walk'. Each plot shows a unique trajectory of 500 steps even though each plot was produced by running the same function (random_walk) for 500 steps. Time is shown by a gradient colour scheme (ranging from dark blue to light blue), allowing visualisation of how random walks changed temporally; earlier steps correspond with darker blue and later steps correspond with light blue. While each step on the random walk has a set distance (0.25 units), a random angle between 0 and 2pi is generated for each step to produce a random path over the 500 iterations. The combination of angle and step length information is used to compute (x,y) coordinates after each step. While both paths begin from the origin (0,0), the random nature of the walk results in the following of distinct trajectories. Production of a unique random_walk plot each time the random_walk function is iterated during code re-running (due to path reliance on random generation of an angle for each step) means that this simulation lacks reproducibility.
