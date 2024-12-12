@@ -12,7 +12,9 @@ ii) A random seed is an initial number or vector used as a fixed starting point 
 
 iii) I edited the script to make a reproducible simulation of Brownian motion and I committed the file and pushed it to my forked reproducible-research-homework repo. To give a reproducible simulation of Brownian motion, I added the set.seed() function to use an arbitrary random seed inside the random_walk function. 
 
-iv) ADD IMAGE to the README.md of the fork
+iv) Edits to code performed for reproducibility.
+
+ADD IMAGE to the README.md of the fork
 
 #### Commit history
 
