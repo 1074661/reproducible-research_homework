@@ -59,7 +59,7 @@ Per the summary table, the estimate of the gradient (β) of the linear model is 
 
 In Table 2 in Cui et al. (2014), for the allometric relationship between dsDNA virion volume and dsDNA virion genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
 
-Therefore, my scaling factor is the same as that found in the paper (when rounded to the nearest whole number), and my allometric exponent is the same as that found in the paper.
+Therefore, my scaling factor is the same as that found in the paper when rounded to the nearest whole number, and my allometric exponent is the same as that found in the paper.
 
 iv) The code to reproduce the figure is shown below.
 
