@@ -57,9 +57,9 @@ Per the summary table, the estimate of the intercept (ln(α)) of the linear mode
 
 Per the summary table, the estimate of the gradient (β) of the linear model is 1.5152. Therefore, the exponent (β) is 1.52. Per the summary table, the P-value for the gradient is 6.44 x 10^-10, which is highly statistically significant (<<< 0.01 significance level threshold). 
 
-In Table 2 from Cui et al. (2014), for the allometric relationship between dsDNA virion volume and dsDNA virion genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
+In Table 2 in Cui et al. (2014), for the allometric relationship between dsDNA virion volume and dsDNA virion genome length, the allometric exponent is 1.52 and the scaling factor is 1182.
 
-Therefore, my scaling factor is the same as that found by Cui et al. (2014) when rounded to the nearest whole number, and my allometric exponent is the same as that found by Cui et al. (2014).
+Therefore, my scaling factor is the same as that found in the paper (when rounded to the nearest whole number), and my allometric exponent is the same as that found in the paper.
 
 iv) The code to reproduce the figure is shown below.
 
